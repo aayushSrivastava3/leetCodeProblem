@@ -13,16 +13,16 @@ public class countAstrisks {
         return sum;
     }
 
-    public int countAsterisksUsingModulo(String s){
-        int count=0;
-        int pipeCount=0;
-        for(int i=0; i<s.length(); i++){
-            if(s.charAt(i) == '|'){
+    public int countAsterisksUsingModulo(String s) {
+        int count = 0;
+        int pipeCount = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == '|') {
                 //We will track the pipecount
                 pipeCount++;
             }
             //We will count astrisk only when the pipecount is even
-            if(pipeCount % 2 == 0 && s.charAt(i) == '*'){
+            if (pipeCount % 2 == 0 && s.charAt(i) == '*') {
                 count++;
             }
         }
@@ -31,7 +31,7 @@ public class countAstrisks {
     }
 
     //Fastest
-    public int countAsterisksUsingFlag(String s){
+    public int countAsterisksUsingFlag(String s) {
         int count = 0;
         int len = s.length();
         // To track whether we are in an even pipeCount section
