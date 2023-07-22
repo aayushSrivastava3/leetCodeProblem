@@ -5,12 +5,12 @@ import java.util.Set;
 
 public class morseCode {
     public int uniqueMorseRepresentations(String[] words) {
-        String[] morseCodeVal = {".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."};
+        String[] morseCodeVal = {".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."};
         Set<String> ansSet = new HashSet<>();
 
-        for(String str : words){
+        for (String str : words) {
             String morseCode = "";
-            for(int i=0; i< str.length();i++){
+            for (int i = 0; i < str.length(); i++) {
 
                 /**
                  * Here are using the int value of the char as index.

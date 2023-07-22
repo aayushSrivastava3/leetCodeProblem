@@ -7,12 +7,12 @@ import java.util.List;
 public class cellsInRangeSolution {
     /**
      * The following program returns the list of cells that come in passed ranges
-     *
+     * <p>
      * Example -> cellsInRange("K1:L2")
      * Output -> List<String> => ["K1","K2","L1","L2"]
-     *
+     * <p>
      * Max runtime -> 3ms
-     * */
+     */
     public List<String> cellsInRange(String s) {
         //Initiating ans list
         ArrayList<String> ans = new ArrayList<>();
@@ -24,10 +24,10 @@ public class cellsInRangeSolution {
         ans.add(range[0]);
 
         //We will run till we get to the final point in the range
-        while(!(ans.get(ans.size()-1).equals(range[1]))){
+        while (!(ans.get(ans.size() - 1).equals(range[1]))) {
 
             //Our current position will be the last element we add to the list
-            String currentCell = ans.get(ans.size()-1);
+            String currentCell = ans.get(ans.size() - 1);
 
             //We will append the values of the next cell in a string builder
             StringBuilder nextCell = new StringBuilder();
@@ -46,15 +46,15 @@ public class cellsInRangeSolution {
              * */
 
             //If the row number of the current cell do not match the target cell number we move down
-            if(currentCell.charAt(1) != range[1].charAt(1)) {
+            if (currentCell.charAt(1) != range[1].charAt(1)) {
                 nextCell.append(currentCell.charAt(0));
                 //Add 1 to the current cell row number [Moving down].
-                nextCell.append(Character.getNumericValue(currentCell.charAt(1))+1);
+                nextCell.append(Character.getNumericValue(currentCell.charAt(1)) + 1);
                 //We add the next cell to the ans list.
                 ans.add(nextCell.toString());
-            }else {     //If the number matches we move to the next column
+            } else {     //If the number matches we move to the next column
                 //We take the char's int value and increment it by 1 and then covert it back to char
-                nextCell.append((char)((int) currentCell.charAt(0)+1));
+                nextCell.append((char) ((int) currentCell.charAt(0) + 1));
 
 
                 /**
