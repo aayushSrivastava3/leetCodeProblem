@@ -1,4 +1,4 @@
-package org.example.strings;
+package org.example.Strings;
 
 public class countAstrisks {
     public int countAsterisksFirst(String s) {
