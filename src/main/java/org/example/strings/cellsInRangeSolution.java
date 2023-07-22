@@ -7,10 +7,10 @@ import java.util.List;
 public class cellsInRangeSolution {
     /**
      * The following program returns the list of cells that come in passed ranges
-     * <p>
+     *
      * Example -> cellsInRange("K1:L2")
      * Output -> List<String> => ["K1","K2","L1","L2"]
-     * <p>
+     *
      * Max runtime -> 3ms
      */
     public List<String> cellsInRange(String s) {
