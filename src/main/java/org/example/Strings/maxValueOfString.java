@@ -1,7 +1,4 @@
-package org.example.strings;
-
-import java.util.Arrays;
-import java.util.Collections;
+package org.example.Strings;
 
 public class maxValueOfString {
     public int maximumValue(String[] strs) {
