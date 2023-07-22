@@ -2,6 +2,7 @@ package org.astoria;
 
 public class addBinary {
     public String addBinary(String a, String b) {
+        String test = "Test";
         StringBuilder str1 = new StringBuilder(a);
         StringBuilder str2 = new StringBuilder(b);
         int sizeDif = Math.abs(a.length() - b.length());
